@@ -1,0 +1,11 @@
+Subsystem-ManifestVersion: 1
+Subsystem-Name: Subsystem 1
+Subsystem-SymbolicName: subsystem_1
+Subsystem-Version: 1.0
+Subsystem-Type: osgi.subsystem.composite
+Subsystem-Content:
+    bundle_1;
+    type=osgi.bundle;
+    version="[1.0,1.0]"
+Import-Package:
+    org.osgi.framework; version="[1.5,2.0)"

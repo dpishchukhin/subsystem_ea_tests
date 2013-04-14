@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project>
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>subsystem_ea_tests</groupId>
+        <artifactId>subsystem_ea_tests</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>subsystem_1</artifactId>
+    <version>1.0</version>
+    <packaging>esa</packaging>
+    <name>Subsystem 1</name>
+
+    <dependencies>
+        <dependency>
+            <groupId>subsystem_ea_tests</groupId>
+            <artifactId>bundle_1</artifactId>
+            <version>1.0</version>
+        </dependency>
+    </dependencies>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.aries</groupId>
+                <artifactId>esa-maven-plugin</artifactId>
+                <version>0.1-SNAPSHOT</version>
+                <extensions>true</extensions>
+                <configuration>
+                    <subsystemManifestFile>src/main/custom/SUBSYSTEM.MF</subsystemManifestFile>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
